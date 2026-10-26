@@ -1,0 +1,29 @@
+// Zero's PVP Things - CustomHUD profile 1 (PvP)
+// Edit in-game (Mod Menu > Zero's PVP Things > CustomHUD) or in any text editor: changes load automatically.
+// Syntax: {variable}, {{condition, "then", "else"}}, =if: cond= ... =endif=, &a colors, &#RRGGBB hex.
+==TextShadow: true==
+==BackgroundColor: #60000000==
+
+==Section:TopLeft==
+{{fps >= 120, "&a", fps >= 60, "&e", "&c"}}{fps} &7FPS &8| {{ping < 60, "&a", ping < 120, "&e", "&c"}}{ping}&7ms
+&7CPS &f{lcps} &8| &f{rcps}
+&7Speed &b{speed -p2} &7b/s
+&7XYZ &f{bx} {by} {bz} &8(&7{facing_short}&8)
+{{combo > 1, "&6Combo &e{combo}  "}}{{reach > 0, "&7Reach &f{reach -p2}"}}
+=if: target=
+&cTarget &f{target_name} &c{target_health -p1}&7/{target_max_health} &8({target_distance -p1}m)
+=endif=
+=if: effect:strength | effect:speed | effect:fire_resistance=
+
+{{effect:strength, "&4Strength {effect:strength} &7{effect:strength:duration}"}}
+{{effect:speed, "&bSpeed {effect:speed} &7{effect:speed:duration}"}}
+{{effect:fire_resistance, "&6Fire Res &7{effect:fire_resistance:duration}"}}
+=endif=
+
+==Section:BottomRight,0,-2==
+==BackgroundColor: none==
+{icon:golden_apple}&e{count:golden_apple} {icon:enchanted_golden_apple}&d{count:enchanted_golden_apple}
+{icon:totem_of_undying}&e{count:totem_of_undying} {icon:ender_pearl}&3{count:ender_pearl}
+{icon:experience_bottle}&a{count:experience_bottle} {icon:end_crystal}&5{count:end_crystal}
+{{item:head, "{item:head:icon}{{item:head:dur_percent < 25, '&c', '&a'}}{item:head:dur_percent}%"}} {{item:chest, "{item:chest:icon}{{item:chest:dur_percent < 25, '&c', '&a'}}{item:chest:dur_percent}%"}}
+{{item:legs, "{item:legs:icon}{{item:legs:dur_percent < 25, '&c', '&a'}}{item:legs:dur_percent}%"}} {{item:feet, "{item:feet:icon}{{item:feet:dur_percent < 25, '&c', '&a'}}{item:feet:dur_percent}%"}}

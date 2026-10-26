@@ -1,0 +1,22 @@
+{
+	"required": true,
+	"package": "dev.zero.pvpthings.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"AbstractContainerScreenAccessor",
+		"AbstractContainerScreenMixin",
+		"GuiGraphicsExtractorMixin",
+		"GuiMixin",
+		"HudMixin",
+		"LightmapRenderStateExtractorMixin",
+		"MouseHandlerMixin",
+		"MultiPlayerGameModeMixin",
+		"ScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

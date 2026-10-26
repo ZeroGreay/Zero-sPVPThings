@@ -1,0 +1,6 @@
+// Zero's PVP Things - CustomHUD profile 2 (Minimal)
+==TextShadow: true==
+==BackgroundColor: none==
+
+==Section:TopLeft==
+&f{fps} &7fps  &f{ping}&7ms  &f{lcps}&7cps

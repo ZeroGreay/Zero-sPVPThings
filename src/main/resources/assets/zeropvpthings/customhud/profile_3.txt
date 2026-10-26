@@ -1,0 +1,20 @@
+// Zero's PVP Things - CustomHUD profile 3 (Info)
+==TextShadow: false==
+==BackgroundColor: #90505050==
+==ForegroundColor: #E0E0E0==
+
+==Section:TopLeft==
+Minecraft {version} &8|&r {server}
+{fps} fps  {ping} ms  {players} players
+XYZ: {x -p3} / {y -p3} / {z -p3}
+Block: {bx} {by} {bz}  Chunk: {cx} {cz}
+Facing: {facing} ({facing_axis}) ({yaw} / {pitch})
+{{dimension = "Overworld", "Nether: {nether_x} {nether_z}", dimension = "The Nether", "Overworld: {nether_x} {nether_z}"}}
+Biome: {biome}  Light: {light}
+Day {day}, {hour24}:{minute}
+
+==Section:TopRight==
+Java {java_version}
+Mem: {memory_percent}% {memory_used}/{memory_max}MB
+Time: {time}  {date}
+Gamma: {gamma}%
