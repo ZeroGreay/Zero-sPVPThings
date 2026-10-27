@@ -93,6 +93,20 @@ public final class Variables {
 		add("pitch", 1, p -> p.getXRot(), "Pitch");
 		add("facing", p -> facing(p), "Facing direction (north, northeast, ...)");
 		add("facing_short", p -> shortFacing(facing(p)), "Facing direction (N, NE, ...)");
+		add("cardinal", p -> switch (p.getDirection()) {
+			case NORTH -> "N";
+			case SOUTH -> "S";
+			case WEST -> "W";
+			case EAST -> "E";
+			default -> "";
+		}, "Facing direction (N, S, W, E)");
+		add("cardinal_name", p -> switch (p.getDirection()) {
+			case NORTH -> "North";
+			case SOUTH -> "South";
+			case WEST -> "West";
+			case EAST -> "East";
+			default -> "";
+		}, "Facing direction (North, South, West, East)");
 		add("facing_axis", p -> switch (p.getDirection()) {
 			case NORTH -> "-Z";
 			case SOUTH -> "+Z";

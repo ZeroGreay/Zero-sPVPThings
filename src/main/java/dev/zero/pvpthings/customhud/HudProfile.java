@@ -28,7 +28,7 @@ public final class HudProfile {
 		Section current = null;
 		// Stack of open =if= blocks: each holds the element list we're currently appending to.
 		List<IfBlock> openIfs = new ArrayList<>();
-		String[] lines = source.replace("\r", "").split("\n", -1);
+		String[] lines = source.replace("\r", "").stripTrailing().split("\n", -1);
 		for (int number = 0; number < lines.length; number++) {
 			String raw = lines[number];
 			String line = raw.strip();

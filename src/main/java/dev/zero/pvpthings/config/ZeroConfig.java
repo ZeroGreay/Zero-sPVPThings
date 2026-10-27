@@ -64,7 +64,7 @@ public final class ZeroConfig {
 	// ---- CustomHUD ----
 	public boolean customHudEnabled = true;
 	/** 1-based index of the active profile file. */
-	public int customHudProfile = 1;
+	public int customHudProfile = 4;
 
 	public static ZeroConfig get() {
 		return instance;

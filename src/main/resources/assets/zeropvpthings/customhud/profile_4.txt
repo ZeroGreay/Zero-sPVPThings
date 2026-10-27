@@ -1,0 +1,13 @@
+// Zero's PVP Things - CustomHUD profile 4 (Zero) - clean PvP panel
+// Coords, CPS, facing direction and sprint status.
+==TextShadow: true==
+==BackgroundColor: #80101018==
+==LineSpacing: 2==
+==Padding: 2==
+
+==Section:TopLeft,3,3==
+&#5EC8FF&lXYZ &8» &#FF6B6B{bx} &#7CFC9A{by} &#6BB8FF{bz}
+{{dimension = "The Nether", "&#FF8C42&lOW &8» &#FFB380{nether_x} {nether_z}", dimension = "Overworld", "&#C77DFF&lNETHER &8» &#E0C3FF{nether_x} {nether_z}"}}
+&#5EC8FF&lCPS &8» {{lcps >= 10, "&#FF6B6B", lcps >= 6, "&#FFD166", "&#7CFC9A"}}{lcps} &8| &#C3B1FF{rcps}
+&#5EC8FF&lDIR &8» &#FFD166{cardinal} &7{cardinal_name}
+&#5EC8FF&lSPRINT &8» {{sprinting, "&#7CFC9A● ON", "&#FF6B6B○ OFF"}}

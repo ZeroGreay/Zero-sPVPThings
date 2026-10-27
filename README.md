@@ -38,7 +38,8 @@ editor. **Export** copies a `ZPVP1:` code, which re-imports exactly.
 
 ## CustomHUD profiles
 
-Profiles are saved in `config/zeropvpthings/customhud/profile_1.txt` … `profile_3.txt`. Edit them in game
+Profiles are saved in `config/zeropvpthings/customhud/profile_1.txt` … `profile_4.txt`. Profile 4 ("Zero", the default) is a
+compact panel showing coords, CPS, facing direction (N/S/W/E) and sprint status. Edit them in game
 (*settings → Edit Profiles…*) or in any text editor; the HUD reloads them automatically.
 
 ```
@@ -62,7 +63,7 @@ Conditions support `| & !`, `= != > < >= <=`, `+ - * / %`, parentheses, numbers 
 **Variables** (the in-game *Variables…* button lists them all):
 `fps ping players server server_name singleplayer multiplayer memory_used memory_max memory_percent version
 java_version username entities x y z bx by bz cx cz nether_x nether_z yaw pitch facing facing_short
-facing_axis biome dimension light speed speed_kmh time time12 date day hour24 minute health max_health hearts
+facing_axis cardinal cardinal_name biome dimension light speed speed_kmh time time12 date day hour24 minute health max_health hearts
 absorption total_health armor food saturation air xp_level sprinting sneaking on_ground in_water burning hurt
 attack_cooldown selected_slot cps lcps rcps reach combo target target_name target_health target_max_health
 target_distance gap_lost eating_gap gamma`

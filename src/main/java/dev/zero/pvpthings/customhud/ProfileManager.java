@@ -14,7 +14,7 @@ import java.nio.file.Path;
  * Loads profile_N.txt files from config/zeropvpthings/customhud and hot-reloads them when they change on disk.
  */
 public final class ProfileManager {
-	public static final int PROFILE_COUNT = 3;
+	public static final int PROFILE_COUNT = 4;
 	private static final long CHECK_INTERVAL_MS = 1000L;
 
 	private static HudProfile active;
